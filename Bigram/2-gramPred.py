@@ -4,7 +4,7 @@ import nltk
 from nltk.corpus import gutenberg
 
 
-# Step 1: Dataset preparation
+# Dataset preparation
 def prepare_data():
     # Load text from all Gutenberg books
     all_words = []
@@ -24,7 +24,7 @@ def prepare_data():
             current_sentence.append(word.lower())
     return sentences
 
-# Step 2: Build the bigram model
+# Build the bigram model
 def build_bigram_model(sentences):
     bigram_counts = defaultdict(int)
     unigram_counts = defaultdict(int)
@@ -43,7 +43,7 @@ def build_bigram_model(sentences):
     
     return bigram_probabilities
 
-# Step 3: Predict the next word
+# Predict the next word
 def predict_next_word(bigram_probabilities, input_sentence):
     words = input_sentence.lower().split()
     last_word = words[-1]
