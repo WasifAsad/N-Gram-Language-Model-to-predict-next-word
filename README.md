@@ -19,5 +19,16 @@ Shows how probability-based text prediction works in NLP.
 <h6>Make sure you have Python 3.8+ installed.</h6>
 
 Clone the repository:
+```bash
 git clone https://github.com/WasifAsad/N-Gram-Language-Model-to-predict-next-word.git
-<br>cd N-Gram-Language-Model-to-predict-next-word
+cd N-Gram-Language-Model-to-predict-next-word
+```
+<h2> Future Improvements</h2>
+
+Add smoothing techniques (Laplace, Kneser-Ney).
+
+Support larger n-grams (4-grams, 5-grams).
+
+Create a simple GUI or web app version.
+
+Allow combining multiple corpora for training.
